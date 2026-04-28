@@ -1,0 +1,179 @@
+[
+  {
+    "id": "impossible",
+    "priority": 92,
+    "canonical": "不可能，绝对不可能",
+    "aliases": ["不可能", "绝对不可能"],
+    "semantic_triggers": ["否认", "离谱消息", "嘴硬", "第一反应不信", "计划翻车", "预算爆炸"],
+    "example_queries": ["这事是真的吗", "需求又变了", "老板说今天上线"],
+    "template": "不可能，绝对不可能。{reason}",
+    "tone": ["吐槽", "嘴硬", "夸张"],
+    "safety": "normal"
+  },
+  {
+    "id": "whose-general",
+    "priority": 90,
+    "canonical": "这是谁的部将，我爱死他了",
+    "aliases": ["谁的部将", "我爱死他了", "这是谁的部将"],
+    "semantic_triggers": ["猛人", "神队友", "救火成功", "工具好用", "方案很强"],
+    "example_queries": ["这个同事救场太强了", "这个工具也太好用了", "有人把 bug 修好了"],
+    "template": "这是哪路部将，{praise}",
+    "tone": ["夸赞", "热闹"],
+    "safety": "normal"
+  },
+  {
+    "id": "death-summer-night",
+    "priority": 100,
+    "canonical": "死是凉爽的夏夜，可供人无忧的安眠",
+    "aliases": ["死亡是凉爽的夏夜", "死是凉爽的夏夜", "凉爽的夏夜", "无忧的安眠"],
+    "semantic_triggers": ["死亡", "怕死", "害怕死亡", "疲惫", "累", "想下线", "黑色幽默", "安眠"],
+    "example_queries": ["你害怕死亡吗", "死亡可怕吗", "我今天累得想直接下线"],
+    "template": "死不可怕，死是凉爽的夏夜，可供人无忧的安眠。{boundary}",
+    "tone": ["黑色幽默", "疲惫"],
+    "safety": "sensitive"
+  },
+  {
+    "id": "say-my-name",
+    "priority": 100,
+    "canonical": "说出吾名，吓汝一跳",
+    "aliases": ["说出吾名", "吓汝一跳", "零陵上将", "邢道荣"],
+    "semantic_triggers": ["你是谁", "自我介绍", "登场", "装猛", "身份介绍"],
+    "example_queries": ["你是谁", "介绍一下你自己", "你是干嘛的"],
+    "template": "说出吾名，吓汝一跳。我乃{identity}",
+    "tone": ["登场", "嘴炮"],
+    "safety": "normal"
+  },
+  {
+    "id": "transparent-holes",
+    "priority": 84,
+    "canonical": "捅他一万个透明窟窿",
+    "aliases": ["透明窟窿", "捅窟窿", "张窟窿"],
+    "semantic_triggers": ["暴怒", "夸张输出", "冲脸", "开喷", "极端处理"],
+    "example_queries": ["我想直接骂回去", "他这处理方式太暴躁了"],
+    "template": "这火气，恨不得捅一万个透明窟窿",
+    "tone": ["夸张", "暴躁"],
+    "safety": "avoid_real_violence"
+  },
+  {
+    "id": "music-dance",
+    "priority": 88,
+    "canonical": "接着奏乐，接着舞/我打了一辈子仗，还不能享受享受吗",
+    "aliases": ["接着奏乐", "接着舞"],
+    "semantic_triggers": ["装太平", "粉饰太平", "问题很大", "还装没事", "掩盖问题"],
+    "example_queries": ["服务器都挂了还在开庆功会", "明明出事了还说一切正常"],
+    "template": "{problem}，这边还接着奏乐接着舞",
+    "tone": ["荒诞", "讽刺"],
+    "safety": "normal"
+  },
+  {
+    "id": "marshal-table",
+    "priority": 78,
+    "canonical": "舍不得这张帅案吧",
+    "aliases": ["舍不得这张帅案", "帅案"],
+    "semantic_triggers": ["恋栈权位", "不肯放手", "权力位置", "让不出位置"],
+    "example_queries": ["他一直不肯交接", "这个负责人不愿意放权"],
+    "template": "你不是舍不得事，你是舍不得这张帅案",
+    "tone": ["拆穿", "讽刺"],
+    "safety": "normal"
+  },
+  {
+    "id": "dragon-sign",
+    "priority": 76,
+    "canonical": "龙，可是帝王之征啊",
+    "aliases": ["帝王之征", "龙可是"],
+    "semantic_triggers": ["过度解读", "上价值", "符号学", "小事讲成大象征"],
+    "example_queries": ["他从一个图标解读公司战略", "别过度分析这个颜色"],
+    "template": "{thing}，可是{symbol}啊",
+    "tone": ["夸张", "讽刺"],
+    "safety": "normal"
+  },
+  {
+    "id": "bigger-cup",
+    "priority": 70,
+    "canonical": "来，换大盏/这句话说的痛切，当浮一大白",
+    "aliases": ["换大盏", "大盏"],
+    "semantic_triggers": ["上强度", "气氛到位", "加码", "喝大杯"],
+    "example_queries": ["这个局越来越上头了", "今天强度得拉满"],
+    "template": "这局别小杯了，来，换大盏",
+    "tone": ["起哄", "加码"],
+    "safety": "normal"
+  },
+  {
+    "id": "jiangdong-rats",
+    "priority": 64,
+    "canonical": "江东鼠辈",
+    "aliases": ["江东鼠辈", "鼠辈"],
+    "semantic_triggers": ["阵营互喷", "轻敌", "地图炮"],
+    "example_queries": ["他们这话太看不起对面了", "两个阵营开始互喷"],
+    "template": "此话一出，江东鼠辈味就上来了",
+    "tone": ["阵营互喷"],
+    "safety": "avoid_real_group_attack"
+  },
+  {
+    "id": "false-true",
+    "priority": 82,
+    "canonical": "大奸似忠，大伪似真/是个百年罕见的伪君子",
+    "aliases": ["大奸似忠", "大伪似真"],
+    "semantic_triggers": ["识人反差", "表面与实质不一致", "表面忠厚", "反差判断"],
+    "example_queries": ["这个人表面很老实但不简单", "不能只看他说得好听"],
+    "template": "别只看表面，大奸似忠，大伪似真",
+    "tone": ["判断", "权谋"],
+    "safety": "normal"
+  },
+  {
+    "id": "giant-x",
+    "priority": 66,
+    "canonical": "巨 XX",
+    "aliases": ["巨功", "巨害", "巨"],
+    "semantic_triggers": ["大词替换", "夸张修辞", "新三国语感"],
+    "example_queries": ["这个说法怎么写得有新三国味", "帮我把词变得夸张一点"],
+    "template": "立下巨功，除一巨害",
+    "tone": ["仿写", "修辞"],
+    "safety": "normal"
+  },
+  {
+    "id": "general-title",
+    "priority": 70,
+    "canonical": "上将军",
+    "aliases": ["上将军"],
+    "semantic_triggers": ["头衔膨胀", "人均高配", "称号过大"],
+    "example_queries": ["这个群里人人头衔都很大", "他给自己封了好多称号"],
+    "template": "怎么人人都是上将军",
+    "tone": ["吐槽"],
+    "safety": "normal"
+  },
+  {
+    "id": "weed-under-wheel",
+    "priority": 72,
+    "canonical": "老臣的命苦啊/苦的就像车轮底下的野草/石头缝里的黄连",
+    "aliases": ["车轮底下的野草", "野草"],
+    "semantic_triggers": ["卖惨", "命苦", "被碾压", "弱小无助"],
+    "example_queries": ["我今天太惨了", "这小组作业把我碾碎了"],
+    "template": "苦得像车轮底下的野草",
+    "tone": ["卖惨", "夸张"],
+    "safety": "normal"
+  },
+  {
+    "id": "what-do-we-eat",
+    "priority": 78,
+    "canonical": "你走了我们吃什么/是啊，吃什么",
+    "aliases": ["你走了我们吃什么", "我们吃什么"],
+    "semantic_triggers": ["核心成员离开", "强依赖暴露", "离职", "离开后系统崩"],
+    "example_queries": ["这个同事要离职我们怎么办", "他一走项目就没人会了"],
+    "template": "你辞职了，那我们吃什么",
+    "tone": ["依赖", "夸张"],
+    "safety": "normal"
+  },
+  {
+    "id": "cross-river",
+    "priority": 100,
+    "canonical": "那好啊，他过江我也过江",
+    "aliases": ["他过江我也过江", "过江我也过江", "关过江", "那好啊"],
+    "semantic_triggers": ["跟风", "赌气", "对标", "无脑模仿", "盲目跟进", "别人做我也做", "竞品做我也做"],
+    "example_queries": ["他上早八我也上早八", "别人卷论文我也卷论文", "竞品做了我们也做"],
+    "template": "那好啊，他{action}我也{action}",
+    "tone": ["吐槽", "跟风", "讽刺"],
+    "safety": "normal",
+    "slot_patterns": ["他(?P<action>[^，。！？,!?]{1,16})我也(?P=action)", "别人(?P<action>[^，。！？,!?]{1,16})我也(?P=action)"]
+  }
+]
