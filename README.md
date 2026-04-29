@@ -319,6 +319,7 @@ python ./xin-sanguo-chat/scripts/meme_retrieve.py "你走了我们吃什么" --t
 
 - 这个 skill 的目标是“自然接梗”，不是还原台词全文。
 - 不建议把大量考据、出处、长台词塞进 `SKILL.md`，否则会影响触发后的上下文效率。
+- 目前只加入了 17 个梗，列位百官可以自行让自己的 Agent 在 skill 中扩展加入喜欢的梗。
 - 新增梗时，优先沉淀到 `references/meme_paradigms.json`，因为它决定“结构相似”的迁移能力。
 - 只有适合检索召回的梗，再加入 `references/meme_bank.json`。
 - 发布包请保留 `xin-sanguo-chat/` 这个目录名，保证路径、安装脚本和 `SKILL.md` 中的 `name` 一致。
