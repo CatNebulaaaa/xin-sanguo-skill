@@ -1,6 +1,6 @@
 # 新三国.skill
 
-> *“你说晚上吃什么，没人接你一句：是啊，吃什么。”*
+> *“你说你走了我们吃什么，没人接你一句：是啊，吃什么。”*
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Codex](https://img.shields.io/badge/Codex-Skill-blue)](https://openai.com/codex)
@@ -8,7 +8,9 @@
 [![OpenClaw](https://img.shields.io/badge/OpenClaw-Skill-green)](https://docs.openclaw.ai/tools/skills)
 [![Hermes](https://img.shields.io/badge/Hermes-Skill-orange)](https://hermes-agent.nousresearch.com/docs/user-guide/features/skills/)
 
-你有没有觉得，身边已经没人懂你的“吃什么”了。
+列位百官，各位诸公：
+
+你是否在某一刻感到遗憾：没人能听懂你的“吃什么”。
 
 你说“我都上一天班了”，没人接“就不能享受享受吗。”
 
